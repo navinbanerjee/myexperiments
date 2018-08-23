@@ -13,7 +13,7 @@ public class StringTest {
         Integer[] leadingElements = Arrays.copyOfRange(a, 0, maxAndStartingIndex[1]);
         Integer[] trailingElements = Arrays.copyOfRange(a, (maxAndStartingIndex[1]+k), a.length);
 
-        List<Integer> mergedLeadingAndTrailingElements = new ArrayList(Arrays.asList(leadingElements));
+        List<Integer> mergedLeadingAndTrailingElements = new ArrayList<Integer>(Arrays.asList(leadingElements));
         mergedLeadingAndTrailingElements.addAll(Arrays.asList(trailingElements));
         Integer[] mergedLeadingAndTrailingElementsArray =  mergedLeadingAndTrailingElements.toArray(new Integer[0]);
 
